@@ -23,29 +23,25 @@ form.addEventListener("submit", e => {
     var img = '';
     if (weather[0].icon[1] == 1){
       text = 'CÉU LIMPO';
-      var img = '1.png';
+      var img = '3.jpg';
     }else if(weather[0].icon[1] == 4){
       text = 'NUBLADO';
-      var img = '3.jpg';
+      var img = '1.png';
     }else{
       text = 'POUCO NUBLADO';
       var img = '2.svg';
     }
 
     const conteudo =
-    ` <h2 class="city-name" data-name="${name},${sys.country}">
-      <span>${name}</span>
-      <sup>${sys.country}</sup>
-      <h3>${main.temp}<sup>°C</sup></h3>
-      <h3>${main.temp_min} / ${main.temp_max} </h3>
-      <h3>${text}</h3>
+    ` <h3 class="city-name" data-name="${name},${sys.country}">
+        <span>${name}</span>
+        <sup>${sys.country}</sup>
+      </h3>
+      <hr>
+      <h3 class="temp">${main.temp}<sup>°C</sup></h3>
+      <h3>MIN ${main.temp_min}° | MAX ${main.temp_max}° </h3>
       <img src="./icons/${img}">
-      </h2>`
-
-  // 01n - clear sky
-  // 02n - few clouds
-  // 03n - scattered clouds
-  // 04n - broken  clouds
+      <h3>${text}</h3>`
 
   li.innerHTML = conteudo;
   lista.appendChild(li);

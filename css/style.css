@@ -53,12 +53,13 @@ input {
 }
 
 button {
-  width: 100px;
+  width: 150px;
   height: 30px;
   margin: 20px 0;
   border-radius: 10px;
-  border: 1px solid black;
-  box-shadow: 0px 5px 5px 0 black;
+  border: 2px solid black;
+  box-shadow: 5px 2px 2px 0 black;
+  background-color: #F50057;
 }
 
 ul {
@@ -89,4 +90,6 @@ h3.temp {
   font-size: 24pt;
 }
 
-
+li img {
+  height: 50px;
+}
