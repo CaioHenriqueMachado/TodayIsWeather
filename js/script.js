@@ -4,7 +4,7 @@ const input = document.querySelector(".filterInput");
 const apiKey = "407146f2551c9564b65bd5c635040095";
 
 form.addEventListener("submit", e => {
-  console.log('aqui');
+  
   e.preventDefault();
 
   let cidade = input.value;
@@ -19,15 +19,27 @@ form.addEventListener("submit", e => {
 
     const li = document.createElement("li");
 
+    var text = '';
+    var img = '';
+    if (weather[0].icon[1] == 1){
+      text = 'CÉU LIMPO';
+      var img = '1.png';
+    }else if(weather[0].icon[1] == 4){
+      text = 'NUBLADO';
+      var img = '3.jpg';
+    }else{
+      text = 'POUCO NUBLADO';
+      var img = '2.svg';
+    }
+
     const conteudo =
     ` <h2 class="city-name" data-name="${name},${sys.country}">
       <span>${name}</span>
       <sup>${sys.country}</sup>
       <h3>${main.temp}<sup>°C</sup></h3>
       <h3>${main.temp_min} / ${main.temp_max} </h3>
-      <h3>${weather[0].main}</h3>
-      <h3>${weather[0].description}</h3>
-      <h3>${weather[0].icon}</h3>
+      <h3>${text}</h3>
+      <img src="./icons/${img}">
       </h2>`
 
   // 01n - clear sky
