@@ -38,8 +38,8 @@ form.addEventListener("submit", e => {
         <sup>${sys.country}</sup>
       </h3>
       <hr>
-      <h3 class="temp">${main.temp}<sup>°C</sup></h3>
-      <h3>MIN ${main.temp_min}° | MAX ${main.temp_max}° </h3>
+      <h3 class="temp">${Math.ceil(main.temp)}<sup>°C</sup></h3>
+      <h3>MIN ${Math.ceil(main.temp_min)}° | MAX ${Math.ceil(main.temp_max)}° </h3>
       <img src="./icons/${img}">
       <h3>${text}</h3>`
 
