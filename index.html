@@ -4,21 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  
   <title>PREVISÃO DO TEMPO</title>
 </head>
 <body>
   <div class="container">
     <h1>PREVISÃO DO TEMPO</h1>
-    <form action="">
+    <form class="filterForm" >
       <h3>DIGITE UMA CIDADE</h3>
-      <input type="text">
+      <input type="text" class="filterInput" autofocus>
       <button type="submit"> VERIFICAR</button>
     </form>
 
   <div class="result">
-    <ul>
+    <ul class="cidades">
       <li>
-        <h3>SÃO PAULO</h3>
+        <h2 class="city-name" data-name="test">
+          <span>SÃO PAULO</span>
+          <sup>BR</sup>
+        </h2>
         <h3>23°</h3>
         <div class="img"></div>
       </li>
@@ -34,19 +38,9 @@
       </li>
     </ul>
   </div>
-
-
   </div>
 
-
-
-
-
-
-
-
-
-
+  <script src="./js/script.js"></script>
 
 
   <!-- <label for="busca">Buscar países</label>
