@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #6C63FF;
+  /* background: linear-gradient(#6C63FF,transparent),
+  linear-gradient(180deg, #6C63FF, #908BFF, #A9A6FF); */
+}
+
 .container {
   padding: 5%;
   min-height: 100vh;
@@ -17,7 +23,6 @@ h1 {
 }
 
 form {
-  background-color: aquamarine;
   width: 300px;
   height: 250px;
   border: 1px solid black;
@@ -56,10 +61,12 @@ ul {
 
 li {
   list-style: none;
-  background-color: cornflowerblue;
+  background-color: azure;
   border-radius: 10px;
   margin: 10px;
-  text-align: center;
+  padding: 5px;
+  box-shadow: 6px 3px 3px black;
+  text-transform: uppercase;
 }
 
 li h3 {
@@ -67,11 +74,12 @@ li h3 {
   text-align: center;
 }
 
-div.img {
-  display: flex;
-  background-color: crimson;
-  width: 50px;
-  height: 50px;
-  margin: 10px auto;
-  border-radius: 50px;
+span {
+  font-size: 16pt;
 }
+
+sup {
+  font-size: 12pt;
+}
+
+

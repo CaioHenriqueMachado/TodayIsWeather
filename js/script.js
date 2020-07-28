@@ -28,7 +28,7 @@ form.addEventListener("submit", e => {
       <h3>${weather[0].main}</h3>
       <h3>${weather[0].description}</h3>
       <h3>${weather[0].icon}</h3>
-  </h2>`
+      </h2>`
 
   // 01n - clear sky
   // 02n - few clouds
