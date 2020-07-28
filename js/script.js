@@ -23,7 +23,17 @@ form.addEventListener("submit", e => {
     ` <h2 class="city-name" data-name="${name},${sys.country}">
       <span>${name}</span>
       <sup>${sys.country}</sup>
+      <h3>${main.temp}<sup>°C</sup></h3>
+      <h3>${main.temp_min} / ${main.temp_max} </h3>
+      <h3>${weather[0].main}</h3>
+      <h3>${weather[0].description}</h3>
+      <h3>${weather[0].icon}</h3>
   </h2>`
+
+  // 01n - clear sky
+  // 02n - few clouds
+  // 03n - scattered clouds
+  // 04n - broken  clouds
 
   li.innerHTML = conteudo;
   lista.appendChild(li);
